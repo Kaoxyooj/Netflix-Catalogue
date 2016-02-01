@@ -1,0 +1,335 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="1d380a56-3894-4c77-a91c-6f6cccb98faf" name="UMLClassDiagram1" linkedPackageId="116b0390-5292-431a-bbde-5d18744ff538" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="66708fbd-13d1-4511-bc6a-a2d179bc2e8e">
+      <profileInstance Id="e3f4e7f1-be2a-4876-8044-abe81893204b" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="7d649750-0c83-4d4a-a13f-e2b79216be10">
+      <profileInstance Id="0c81be68-1fb1-4a93-9ded-ecf2165d2e8b" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasPackages>
+      <package Id="c18b0042-2e11-4114-9837-b000cd4991a0" name="Netflix Catalogue">
+        <elementDefinition Id="0c5c0934-fde6-4b7b-a5a2-8c2583101253" />
+        <packagedElements>
+          <packageHasNamedElement>
+            <class Id="7ad8e7c5-8e8d-4ca5-b646-6ab984799885" name="Action" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="646860d7-bc64-4200-aa24-f8999c1550fd" />
+              <generalsInternal>
+                <generalization Id="9cd02879-47cf-490c-a89b-66a7b73329e4" isSubstitutable="false">
+                  <classMoniker Id="3dd4a336-1552-4acc-8cdd-2b9bfec21dec" LastKnownName="Genre" />
+                  <elementDefinition Id="c6a40f9e-90fe-4bae-aa80-c7a7537f5efd" />
+                </generalization>
+              </generalsInternal>
+              <ownedAttributesInternal>
+                <property Id="816b53b3-3784-44b1-85e4-1d3dc8752fdd" name="List" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8e69994b-2465-46e2-802b-8c4fe579b4ae" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dbb02259-dddd-4ba1-9900-ed767483ce60" LastKnownName="Title" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="0ec4b7b9-899f-485b-8710-064b2059f867" name="Romance" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="2fe7d2ac-0517-473e-9848-d65392a2f6dd" />
+              <generalsInternal>
+                <generalization Id="bffc8eae-8b11-4eb2-9b8d-4b73ac412d53" isSubstitutable="false">
+                  <classMoniker Id="3dd4a336-1552-4acc-8cdd-2b9bfec21dec" LastKnownName="Genre" />
+                  <elementDefinition Id="3f7d827b-6dc7-4b49-bbbe-a79cd0c780e6" />
+                </generalization>
+              </generalsInternal>
+              <ownedAttributesInternal>
+                <property Id="f0f88fd7-b0dd-4ea1-afc4-53d14315eeef" name="List" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="891d78b1-27ba-43f0-aa0b-b31c075471e9" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dbb02259-dddd-4ba1-9900-ed767483ce60" LastKnownName="Title" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="a437f974-4f59-414e-a4e6-25e763749a8a" name="TV Show" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f95f6bde-4ff5-48c1-be53-2e9b53000a4a" />
+              <generalsInternal>
+                <generalization Id="bb20ecca-5aa2-4193-94c1-94818e398ee1" isSubstitutable="false">
+                  <classMoniker Id="1f1ca024-cdbd-4276-b8c9-6a4c4c18faf6" LastKnownName="Title" />
+                  <elementDefinition Id="d7c12802-aeaf-4a1d-a562-f38bc25a7586" />
+                </generalization>
+              </generalsInternal>
+              <targetEnds>
+                <association Id="0721344e-bb64-48b3-b0bf-b8494d2b58de" isDerived="false" sourceEndRoleName="TV Show" targetEndRoleName="Episodes" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="1dd8f428-519b-434b-ae94-399b28fc1d8d" LastKnownName="Episode" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="9e3a620a-1bcc-498b-b460-a039c1155438" name="TV Show" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="Composite" isComposite="false" isNavigableOwned="false">
+                        <elementDefinition Id="7ca785a6-b13f-4b35-9d46-c5ead69be36f" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="1323b64c-faab-4275-a0ca-c08b86742580" name="Episodes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="true">
+                        <lowerValueInternal>
+                          <literalString Id="83ece76f-1ceb-41e4-a848-fb8b7fead99e" name="Lower" value="5">
+                            <elementDefinition Id="db37256c-ccfb-4e1b-a54e-a3abb8908d31" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="3e6c3220-8965-42ee-8211-12025200394f" name="Upper" value="5">
+                            <elementDefinition Id="6efa97e7-aa2b-4c44-9d82-6390eeec560f" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="a1613209-0cd0-45f2-9d92-b4fc83054026" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="50bb7aa1-4bd3-4462-8228-b2cdeb94b536" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="be84d093-9ecb-421a-b955-182ed9298abe" name="List" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8bb96ec3-3011-44f6-9680-6b9f29b69a1a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="14e7c81f-7989-4104-8144-c9323087122c" LastKnownName="Episode" />
+                  </type_NamedElement>
+                </property>
+                <property Id="b0ae293b-5314-4413-ad0a-4f81eb6ab417" name="new rating" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3101f62e-97dd-4cc1-b23f-c5ea0a4dc389" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5c9ee619-a864-49d0-ba0c-d02be63e3fe8" LastKnownName="int" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="bc36606e-f9a0-4311-b1fd-6e8b3372cf27" name="TVshow" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="5469bdb1-c9b7-4bd9-8688-f29552dd49dd" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="1dd8f428-519b-434b-ae94-399b28fc1d8d" name="Episode" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="afd727de-6819-4502-bc94-c0a77720dc0f" />
+              <ownedAttributesInternal>
+                <property Id="9098563c-a918-4c1a-b04c-0130c7b1afd8" name="rating" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c45a20d8-ed48-4434-861e-168388fdc851" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5c9ee619-a864-49d0-ba0c-d02be63e3fe8" LastKnownName="int" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="0466a2af-6311-493f-98e1-88261e2abac6" name="Episodee" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="25a8efa1-a425-45b5-819a-00b41905bc1f" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="30c4f99a-1ae7-4338-980b-120aab87cd22" name="Comedy" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f2b80d78-bbc6-451d-bb5a-a12d3a449d8c" />
+              <generalsInternal>
+                <generalization Id="384f751d-a2cd-471d-b92c-8f471411400f" isSubstitutable="false">
+                  <classMoniker Id="3dd4a336-1552-4acc-8cdd-2b9bfec21dec" LastKnownName="Genre" />
+                  <elementDefinition Id="1d9d21ee-a19e-4f03-8915-05f72f6267cf" />
+                </generalization>
+              </generalsInternal>
+              <ownedAttributesInternal>
+                <property Id="7d5a58c3-e7f4-4d8f-8842-74961b997151" name="List" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="31941ff8-0ab7-4bb0-adac-64ddcb7b1a4a" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dbb02259-dddd-4ba1-9900-ed767483ce60" LastKnownName="Title" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="75b8f61a-e5a7-47e5-9148-f74393103b6e" name="Movie" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="ad139427-884f-4234-b52b-6095289ebb77" />
+              <generalsInternal>
+                <generalization Id="9802021d-ee8d-4f47-8a26-8709067dba64" isSubstitutable="false">
+                  <classMoniker Id="1f1ca024-cdbd-4276-b8c9-6a4c4c18faf6" LastKnownName="Title" />
+                  <elementDefinition Id="4b878af5-511c-4f5a-9553-ee0b32a4cdbf" />
+                </generalization>
+              </generalsInternal>
+              <ownedAttributesInternal>
+                <property Id="6452781a-8750-4f11-a1cd-da900bc7eadc" name="duration" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="58bc0db3-6d17-480c-929c-e561223d851f" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="f774f329-71cc-4941-82a5-200677b3a158" LastKnownName="float" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="bd8ae9d4-3aba-46ab-ba1a-7d54d1b2a83a" name="Movie" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="df1e00d1-c048-493e-95d8-cb9a328a4863" />
+                </operation>
+                <operation Id="c5ebe9fa-e27a-4d3d-834e-c2211692d70c" name="ToString" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="af5c3217-9821-4585-92ea-405688fcbf6f" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="3dd4a336-1552-4acc-8cdd-2b9bfec21dec" name="Genre" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="c89dc494-687e-402c-8bfd-dc0c3d48d410" />
+              <targetEnds>
+                <association Id="0d00e9e2-1442-4dae-bc5f-ed5f5475a8da" isDerived="false" sourceEndRoleName="Genre" targetEndRoleName="Title" isLeaf="false" isAbstract="false">
+                  <classMoniker Id="1f1ca024-cdbd-4276-b8c9-6a4c4c18faf6" LastKnownName="Title" />
+                  <relationshipOwnedElementsInternal>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="923b1f27-76dc-47db-a661-be6153da69ae" name="Genre" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                        <lowerValueInternal>
+                          <literalString Id="341ccc52-7a60-45a4-bef2-57df936b9dc1" name="Lower" value="4">
+                            <elementDefinition Id="58eafb16-c204-41ab-901a-bc91ee49be92" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="f60532c7-d92f-4514-b032-6890a67ab751" name="Upper" value="4">
+                            <elementDefinition Id="ccfec711-b1ef-406a-84db-928a61307e5c" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="8c3670e1-6da1-422a-8db9-da6987df0324" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                    <associationHasOwnedEnds>
+                      <memberEnd Id="cde469e6-c709-4f44-8aaa-e445ca3a493a" name="Title" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                        <lowerValueInternal>
+                          <literalString Id="bdfba62c-be11-4667-a950-389184e40116" name="Lower" value="5">
+                            <elementDefinition Id="1a3292ed-72b5-46f8-a0e2-f92753dafab5" />
+                          </literalString>
+                        </lowerValueInternal>
+                        <upperValueInternal>
+                          <literalString Id="e99e13e2-1515-4f27-b34e-9d53f1857816" name="Upper" value="5">
+                            <elementDefinition Id="ac377141-f68b-48d3-859e-7190ef555554" />
+                          </literalString>
+                        </upperValueInternal>
+                        <elementDefinition Id="e3fa38eb-7c04-4916-ad3c-062d4de7bc9c" />
+                      </memberEnd>
+                    </associationHasOwnedEnds>
+                  </relationshipOwnedElementsInternal>
+                  <elementDefinition Id="c357c731-c353-45c1-9440-40115f7819a9" />
+                </association>
+              </targetEnds>
+              <ownedAttributesInternal>
+                <property Id="9943d166-d564-400c-8f05-50a5404bcfdb" name="List" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cc84a547-8600-47dd-abd4-abe4b69c2999" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dbb02259-dddd-4ba1-9900-ed767483ce60" LastKnownName="Title" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="6a27bf8b-e735-4412-8605-4ae0c60dbefa" name="GetEnumerator" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b0236665-634e-4239-bea9-bd592c34612e" />
+                </operation>
+                <operation Id="a9fc437c-e12c-41e6-b5a8-fc248158a38a" name="Operator +" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="a4abe569-5169-402c-8e76-99056c474f7b" />
+                </operation>
+                <operation Id="931fba5f-1782-4f13-b62b-281bf0557a93" name="Operation1" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="b1cf17a2-2759-4f00-b718-f8588c140ca2" />
+                </operation>
+                <operation Id="7dcf3a59-054e-4f78-aa47-5b655263a8a7" name="Operator +" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="066d09bb-3de8-42be-937c-4d140e95916d" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="3f2f64ba-42f2-463a-a407-3c827f2b2b64" name="View" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f024b484-90e2-4fc9-a896-2d28e2dd867a" />
+              <ownedOperationsInternal>
+                <operation Id="6b809896-7cb7-4a1a-bbbd-5c8dd8701faa" name="Print" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="4496b462-ab54-48df-b81c-4a784eb0fa9b" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="ee2d5da3-78f6-4a94-a728-d16861b37315" name="All" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="2a1daa72-30e4-497a-a02d-ee59561bff95" />
+              <generalsInternal>
+                <generalization Id="752eb032-b389-4dff-a700-fab82e5deb21" isSubstitutable="false">
+                  <classMoniker Id="3dd4a336-1552-4acc-8cdd-2b9bfec21dec" LastKnownName="Genre" />
+                  <elementDefinition Id="49275bb3-8a84-42f2-b65f-06673efe2df3" />
+                </generalization>
+              </generalsInternal>
+              <ownedAttributesInternal>
+                <property Id="9356dc44-eb13-46c3-9b37-8f0af6044602" name="List" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="d12bc1e5-f3d1-441e-ac81-f4d026a77f91" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="dbb02259-dddd-4ba1-9900-ed767483ce60" LastKnownName="Title" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+            </class>
+          </packageHasNamedElement>
+          <packageHasNamedElement>
+            <class Id="1f1ca024-cdbd-4276-b8c9-6a4c4c18faf6" name="Title" isAbstract="false" isLeaf="false" isActiveClass="false">
+              <elementDefinition Id="f2d49052-2577-4173-8ac8-03b8882c90d5" />
+              <ownedAttributesInternal>
+                <property Id="25f1eac0-26c7-4e07-8618-2650aa545c0a" name="name" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9e6b2163-2e00-4a80-bd81-661afdccd313" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="ffacfc83-6ef6-4789-b3a9-663d5c785c80" LastKnownName="string" />
+                  </type_NamedElement>
+                </property>
+                <property Id="59a60d91-b74c-42f2-ba0f-05130790f456" name="rating" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8f88827b-a21c-4214-8854-8787c25cd266" />
+                  <type_NamedElement>
+                    <referencedTypeMoniker Id="5c9ee619-a864-49d0-ba0c-d02be63e3fe8" LastKnownName="int" />
+                  </type_NamedElement>
+                </property>
+              </ownedAttributesInternal>
+              <ownedOperationsInternal>
+                <operation Id="2151819c-26d8-403c-8e57-6cf112efdde6" name="Title" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="9a1e456c-4aaf-4850-8532-d8f2a890e2fe" />
+                </operation>
+                <operation Id="47847c35-9afc-4c36-8e1b-99a50b253736" name="Title" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
+                  <elementDefinition Id="4c4fede5-047f-41d6-b9b3-ee8e103aca58" />
+                </operation>
+              </ownedOperationsInternal>
+            </class>
+          </packageHasNamedElement>
+        </packagedElements>
+      </package>
+    </logicalClassDesignerModelHasPackages>
+    <packageHasNamedElement>
+      <referencedType Id="dbb02259-dddd-4ba1-9900-ed767483ce60" name="Title" isAbstract="false" isLeaf="false" cachedFullName="Netflix UML::Netflix Catalogue::Title">
+        <elementDefinition Id="f2d49052-2577-4173-8ac8-03b8882c90d5" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="5c9ee619-a864-49d0-ba0c-d02be63e3fe8" name="int" isAbstract="false" isLeaf="false" cachedFullName="int">
+        <elementDefinition Id="7752a4bf-d177-4b34-afb3-57676c140821" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="ffacfc83-6ef6-4789-b3a9-663d5c785c80" name="string" isAbstract="false" isLeaf="false" cachedFullName="string">
+        <elementDefinition Id="bedbdd18-0a65-428a-a50c-e5e36e2564ed" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="f774f329-71cc-4941-82a5-200677b3a158" name="float" isAbstract="false" isLeaf="false" cachedFullName="float">
+        <elementDefinition Id="935a5de8-bf19-43a9-a020-54cac05fc04f" />
+      </referencedType>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <referencedType Id="14e7c81f-7989-4104-8144-c9323087122c" name="Episode" isAbstract="false" isLeaf="false" cachedFullName="Episode">
+        <elementDefinition Id="5c46a37c-7ca6-4571-93b7-7ef023197f6a" />
+      </referencedType>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="116b0390-5292-431a-bbde-5d18744ff538" name="Netflix UML">
+    <elementDefinition Id="1eb8518e-d05c-4dac-8505-a2d97cc59902" />
+  </package>
+</logicalClassDesignerModel>
