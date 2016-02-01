@@ -51,10 +51,5 @@ namespace Netflix_Catalogue
             
             return newGenre;
         }
-
-        //public override string ToString()
-        //{
-        //    return Genre.titles;
-        //}
     }
 }
